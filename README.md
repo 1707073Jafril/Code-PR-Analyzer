@@ -57,18 +57,10 @@ The **Pull Request Inspector** is a Python-based tool designed to automate the r
    This starts the Pull Request Inspector, which initializes the FastMCP agent server for processing pull requests.
 
 2. **Interact with the Inspector**:
-   The tool uses the FastMCP framework to process commands. You can interact with it via the configured transport (stdio by default) to fetch and analyze pull requests. Example workflow:
+   The tool uses the FastMCP framework to process commands. You can interact with it via Claude Desktop to fetch and analyze pull requests. Example workflow:
    - Fetch pull request data from a GitHub repository.
    - Store the retrieved data in MongoDB.
    - Use FastMCP tools to evaluate or process the data further.
-
-3. **Example Command** (via FastMCP interface):
-   To retrieve and archive a pull request:
-   ```python
-   await inspector._get_pull_request("owner", "repository", 123)
-   await inspector._archive_to_database("PR Title", pr_data)
-   ```
-   Note: The exact interaction depends on the FastMCP interface implementation.
 
 ## Dependencies
 - `anthropic`: For potential AI-driven analysis (not explicitly used in the provided code but listed as a dependency).
