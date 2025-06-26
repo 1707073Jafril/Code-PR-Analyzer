@@ -1,0 +1,7 @@
+anthropic
+pymongo
+mcp[cli]
+python-dotenv
+requests
+
+
